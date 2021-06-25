@@ -1,0 +1,396 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Beitragsrechner - Piwowar Finanzen</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="robots" content="index,follow">
+		<link rel="alternate" hreflang="de" href="https://piwowar-finanzen.de" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		  <link rel="stylesheet" href="/resources/demos/style.css">
+		<!-- Scripts -->
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<!-- <!-- <script src="assets/js/jquery.min.js"></script> --> -->
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.onvisible.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+		
+		<script>
+		$( function() {
+		  $( "#dialog-message" ).dialog({
+			modal: true,
+			width: '50%',
+			close: function(ev, ui)
+                {
+                   window.open('./images/Erstinformation.pdf','_blank');
+                },
+			buttons: [{
+			  text: "Akzeptieren und speichern",
+			  click: function() {
+				$( this ).dialog( "close" );
+			  }
+			}]
+		  });
+		} );
+		</script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$('.terms').append('<input type="text" name="repeat_email" />');
+		});
+		</script>
+	</head>
+	<body class="no-sidebar">
+			<div id="dialog-message" title="Erstinformation">
+					<p>
+					  
+					
+						Wir freuen uns, Sie als Interessenten begrüßen zu dürfen. Gemäß § 11 VersVermV, § 12 FinVermV möchten wir Ihnen mit dem vorliegenden Informationsblatt folgende Angaben übermitteln:
+											</p>
+						<h3><strong>1.	Ihr Vermittler und Ihr Vertragspartner </strong></h3>
+						<br>
+						<p>
+						Ihr Vermittler für Versicherungen ist
+
+						Katarzyna Hilger Nordendstr. 41 80801 München 
+						Vermittlerregisternummer: D-6YRS-045E9-58
+
+						Ihr Vermittler verfügt über eine Gewerbeerlaubnis nach § 34d Abs.1 GewO als Versicherungsmakler und ist unter der oben genannten Registernummer
+						in das Vermittlerregister nach § 11a GewO eingetragen.
+						</p>
+
+						<h3><strong>2.	Kooperationspartner des Vermittlers</strong></h3>
+						<br>
+						<p>
+						Kooperationspartner des Vermittlers bzw. der Firma ist die
+						SDV Servicepartner der Versicherungsmakler AG, Proviantbachstr. 30, 86153 Augsburg.
+
+						Die SDV AG verfügt ebenfalls über eine Gewerbeerlaubnis nach § 34d Abs. 1 GewO als Versicherungsmakler:
+						Vermittlerregister nach § 11a GewO, Registernummer D-B7E0-MVQ0O-96
+						Die SDV Servicepartner der Versicherungsmakler AG unterstützt Ihren Vermittler und Kooperationspartner bei der Bearbeitung,
+
+						Vermittlung und Verwaltung der an sie vermittelten und betreuten Verträge. Im Zuge dessen werden zur Vertragserfüllung personenbezogene
+
+						Daten und Gesundheitsdaten erhoben und gespeichert. Die SDV AG ist ein Zwischenvermittler gegenüber den
+						Risikoträgern und weder Ihr Vertragspartner noch Ihr Abschlussvermittler im Sinne der gesetzlichen Regelungen.
+						</p>
+						<h3><strong>3.	Gemeinsame Angaben</strong></h3>
+						<br>
+						<p>
+						Seitens des Vermittlers oder des Vertragspartners bestehen keine Beteiligungen von mehr als 10 % an oder von Versicherern oder
+						deren Muttergesellschaften. Die Kapitalbeteiligung an der SDV Servicepartner der Versicherungsmakler AG werden ganzheitlich
+						von der SIGNAL IDUNA Gruppe gehalten. Sofern Sie die Eintragungen im Vermittlerregister überprüfen möchten, können Sie dies
+						über die Internetseite www.vermittlerregister.info
+						oder unter Telefon 0 180 / 600 58 50 (Festnetzpreis 0,20 1 / Anruf; Mobilfunkpreise maximal 0,60 1 / Anruf)
+						oder bei der DIHK e.V., Breite Straße 29, 10178 Berlin, Telefon 0 30 / 20 308 -0, Internet www.dihk.de
+						als registerführende gemeinsame Stelle nach § 11a GewO jederzeit veranlassen.
+						Sofern Sie mit unseren Dienstleistungen einmal nicht zufrieden sein sollten, können Sie folgende Stellen als außergerichtliche
+						Schlichtungsstellen anrufen: Versicherungsombudsmann e.V. Postfach 080632, 10006 Berlin
+						Ombudsmann Private Kranken- und Pflegeversicherung Postfach 060222, 10052 Berlin
+
+
+						Ich habe die Erstinformation gelesen und gespeichert 
+
+					</p>
+					
+					
+
+				  </div>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								<a href="index.html" id="logo" style="border:none;"><img class="image subsite" src="images/piwowar_finanzen_logo.png" alt="Piwowar Finanzen" /></a>
+							</header>
+						</div>
+
+					<!-- Nav -->
+						
+						<nav id="nav">
+							<div id="flag"><a href="./pl/index.html"><p style="margin-top:12px;float:left;">Polnisch </p><img src="images/Poland.png" alt="" /></a></div>
+							<ul>
+								<li><a href="./ueber-uns.html">Über Uns</a>
+									<ul>
+										<li><a href="./unsere-leistungen.html">Wie kann ich die Leistungen in Anspruch nehmen?</a></li>
+									</ul>
+								</li>
+								<li><a href="./unternehmen.html">Für Ihr Unternehmen</a></li>
+								<li><a href="./investitionsberatung.html">Investitionsberatung</a></li>
+								<li><a href="./versicherungen.html">Versicherungen</a>
+									<ul>
+										<li><a href="./ihre-sicherheit.html">Für Dich</a></li>
+										<li><a href="./versicherungen-familie.html">Für die Familie</a></li>
+										<li><a href="./versicherungen-unternehmer.html">Für Unternehmer</a></li>
+										<li><a href="./altersvorsorge.html">Altersvorsorge</a></li>
+										<li><a href="./beitragsrechner.html">Beitragsrechner</a></li>
+									</ul>
+								</li>
+								<li><a href="./individuelle-kunden.html">Für individuelle Kunden</a>
+									<ul>
+										<li><a href="./abc_arbeitgeber_arbeitnehmer.html">ABC Arbeitgeber und Arbeitnehmer</a></li>
+										<li><a href="./strom-und-gas.html">Strom und Gas</a></li>
+										<li><a href="./wissenswertes.html">Wissenswerte Informationen</a></li>
+									</ul>
+								</li>
+								<li><a href="./immobilien-finanzierung.html">Immobilien / Finanzierung</a>
+									<ul>
+										<li><a href="./pflegeimmobilien.html">Pflegeimmobilien</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="container">
+						<article id="main" class="special">
+							<header>
+								<h1>Beitragsrechner</h1>
+								<p>Klicken Sie einen der unten aufgeführten Links und Sie werden zur Ihrer individuellen Versicherungsberechnung weitergeleitet.</p>
+								
+							</header>
+							
+							<div class="row">
+							<article class="4u 12u(mobile) special">
+								<p>
+									<a href="https://ssl.innosystems.net/cgi-bin/formulare/formulare.pl?user=SDVA86&programm=hpr&untermandant=SDVAPP-0010-0164&hprid=60852&template=st_phv" target="_blank" class="c_bold">Privathaftpflicht</a>
+								</p>
+								<p>
+									<a href="https://ssl.innosystems.net/cgi-bin/formulare/formulare.pl?user=SDVA86&programm=hpr&untermandant=SDVAPP-0010-0164&hprid=60852&template=st_hu" target="_blank" class="c_bold">Hundehalterhaftpflicht</a>
+								</p>
+								<p>
+									<a href="https://ssl.innosystems.net/cgi-bin/formulare/formulare.pl?user=SDVA86&programm=hpr&untermandant=SDVAPP-0010-0164&hprid=60852&template=st_pf" target="_blank" class="c_bold">Pferdehalterhaftpflicht</a>
+								</p>
+								<p>
+									<a href="https://ssl.innosystems.net/cgi-bin/formulare/formulare.pl?user=SDVA86&programm=hpr&untermandant=SDVAPP-0010-0164&hprid=60852&template=st_bau" target="_blank" class="c_bold">Bauherrenhaftpflicht</a>
+								</p>
+								<p>
+									<a href="https://ssl.innosystems.net/cgi-bin/formulare/formulare.pl?user=SDVA86&programm=hpr&untermandant=SDVAPP-0010-0164&hprid=60852&template=st_gew" target="_blank" class="c_bold">Gewässerschadenhaftpflicht</a>
+								</p>
+								<p>
+									<a href="https://ssl.innosystems.net/cgi-bin/formulare/formulare.pl?user=SDVA86&programm=hpr&untermandant=SDVAPP-0010-0164&hprid=60852&template=st_hug" target="_blank" class="c_bold">Haus- und Grundbesitzerhaftpflicht</a>
+								</p>
+							</article>
+							<article class="4u 12u(mobile) special">
+								<p>
+									<a href="https://ssl.innosystems.net/cgi-bin/formulare/formulare.pl?user=SDVA86&programm=hpr&untermandant=SDVAPP-0010-0164&hprid=60852&template=st_hr" target="_blank" class="c_bold">Hausrat</a>
+								</p>
+								<p>
+									<a href="https://ssl.innosystems.net/cgi-bin/formulare/formulare.pl?user=SDVA86&programm=hpr&untermandant=SDVAPP-0010-0164&hprid=60852&template=st_wg" target="_blank" class="c_bold">Wohngebäude</a>
+								</p>
+								<p>
+									<a href="https://ssl.innosystems.net/cgi-bin/formulare/formulare.pl?user=SDVA86&programm=hpr&untermandant=SDVAPP-0010-0164&hprid=60852&template=st_unf" target="_blank" class="c_bold">Unfall</a>
+								</p>
+								<p>
+									<a href="https://ssl.innosystems.net/cgi-bin/formulare/formulare.pl?user=SDVA86&programm=hpr&untermandant=SDVAPP-0010-0164&hprid=60852&template=st_rs" target="_blank" class="c_bold">Rechtsschutz</a>
+								</p>
+								<p>
+									<a href="https://sniver.innosystems.net/user/auth?user.name=SDVAPP-0010-0164&module=bal" target="_blank" class="c_bold">Bauleistungsversicherung</a>
+								</p>
+								<p>
+									<a href="https://sniver.innosystems.net/user/auth?user.name=SDVAPP-0010-0164&module=multirente" target="_blank" class="c_bold">Multirente</a>
+								</p>
+							</article>
+							<article class="4u 12u(mobile) special">
+								<p>
+									<a href="https://sniver.innosystems.net/user/auth?user.name=SDVAPP-0010-0164&module=pkw" target="_blank" class="c_bold">KFZ-Versicherung PKW</a>
+								</p>
+								<p>
+									<a href="https://sniver.innosystems.net/user/auth?user.name=SDVAPP-0010-0164&module=krad" target="_blank" class="c_bold">KFZ-Versicherung Kraftrad</a>
+								</p>
+								<p>
+									<a href="https://sniver.innosystems.net/user/auth?user.name=SDVAPP-0010-0164&module=lkwl" target="_blank" class="c_bold">KFZ-Versicherung LKW</a>
+								</p>
+								<p>
+									<a href="https://sniver.innosystems.net/user/auth?user.name=SDVAPP-0010-0164&module=anhaenger" target="_blank" class="c_bold">KFZ-Versicherung Anhänger</a>
+								</p>
+								<p>
+									<a href="https://sniver.innosystems.net/user/auth?user.name=SDVAPP-0010-0164&module=camping" target="_blank" class="c_bold">KFZ-Versicherung Camping-Kfz</a>
+								</p>
+
+							</article>
+							</div>
+							
+							
+							
+						</article>
+						
+					</div>
+
+				</div>
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<div class="row">
+
+							<!-- pics -->
+								<section class="4u 12u(mobile)">
+									<header>
+										<h2 class="icon fa-camera circled"><span class="label">Photos</span></h2>
+									</header>
+									<div class="row 25% no-collapse">
+										<div class="6u">
+											<a href="./ueber-uns.html" class="image fit"><img src="images/pic10.jpg" alt="" /></a>
+										</div>
+										<div class="6u">
+											<a href="./ueber-uns.html" class="image fit"><img src="images/pic11.jpg" alt="" /></a>
+										</div>
+									</div>
+									<div class="row 25% no-collapse">
+										<div class="6u">
+											<a href="./ueber-uns.html" class="image fit"><img src="images/pic12.jpg" alt="" /></a>
+										</div>
+										<div class="6u">
+											<a href="./ueber-uns.html" class="image fit"><img src="images/pic13.jpg" alt="" /></a>
+										</div>
+									</div>
+									<div class="row 25% no-collapse">
+										<div class="6u">
+											<a href="./ueber-uns.html" class="image fit"><img src="images/pic14.jpg" alt="" /></a>
+										</div>
+										<div class="6u">
+											<a href="./ueber-uns.html" class="image fit"><img src="images/pic15.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section>
+
+							<!-- Posts -->
+								<section class="4u 12u(mobile)">
+									<header>
+										<h2 class="icon fa-file circled"><span class="label">Posts</span></h2>
+									</header>
+									<ul class="divided">
+										<li>
+											<article class="post stub">
+												<header>
+													<h3><a href="./impressum.html">Impressum</a></h3>
+												</header>
+												<!-- <span class="timestamp">3 hours ago</span> -->
+											</article>
+										</li>
+										<li>
+											<article class="post stub">
+												<header>
+													<h3><a href="./datenschutz.html">Datenschutz</a></h3>
+												</header>
+											</article>
+										</li>
+										<li>
+											<article class="post stub">
+												<header>
+													<h3><a href="./kontakt.html">Kontakt</a></h3>
+												</header>
+											</article>
+										</li>
+										<li>
+											<article class="post stub">
+												<header>
+													<img src="images/logo-gut-beraten.png" style="float:left;margin-right:8px;" title="gut beraten" alt="gut beraten">
+													<br><h3>Wir bilden uns für Sie weiter</h3>
+												</header>
+											</article>
+										</li>
+									</ul>
+								</section>
+
+							<!-- contactform -->
+								<section class="4u 12u(mobile)">
+									<header>
+										<h2 class="icon fa-envelope circled"><span class="label">Photos</span></h2>
+									</header>
+									<form action="act_sendmail.php">
+									  <div class="row">
+									    <div style="width:100%;">
+									      <label for="EmailInput">Name und Vorname</label>
+									      <input class="u-full-width" placeholder="" id="NameInput" name="NameInput" type="text" required>
+									      <label for="EmailInput">Straße und Hausnummer</label>
+									      <input class="u-full-width" placeholder="" id="AdressInput" name="AdressInput" type="text" required>
+									      <label for="EmailInput">Postleitzahl</label>
+									      <input class="u-full-width" placeholder="" id="PlzInput" name="PlzInput" type="text" required>
+									      <label for="EmailInput">Telefonnummer</label>
+									      <input class="u-full-width" placeholder="" id="TelInput" name="TelInput" type="text" required>
+									      <label for="EmailInput">E-Mail</label>
+									      <input class="u-full-width" placeholder="" id="EmailInput" name="EmailInput" type="email" required>
+									    </div>
+									     <!--
+									    <div class="six columns">
+									      <label for="exampleRecipientInput">Reason for contacting</label>
+									      <select class="u-full-width" id="exampleRecipientInput">
+									        <option value="Option 1">Questions</option>
+									        <option value="Option 2">Admiration</option>
+									        <option value="Option 3">Can I get your number?</option>
+									      </select>
+									    </div>
+									     -->
+									  </div>
+									  <label for="Message">Nachricht</label>
+									  <textarea class="u-full-width" placeholder="Guten Tag …" id="Message" name="Message"></textarea>
+									  <!-- 
+									  <label class="example-send-yourself-copy">
+									    <input type="checkbox">
+									    <span class="label-body">Send a copy to yourself</span>
+									  </label>
+									   -->
+									  <input class="button-primary" value="Senden" type="submit">
+									  <div class="terms">
+										Folgende Felder bitte frei lassen!
+										<input type="checkbox" name="terms">
+									  </div>
+									</form>
+									
+								</section>
+
+						</div>
+						<hr style ="margin-bottom:100px;" />
+						<div class="row">
+							<div class="12u">
+								<div class="four columns offset-by-one">
+									
+								</div>
+
+								<!-- Contact -->
+									<section class="contact">
+										<p class="bottom10">Unternehmensorientierte Dienstleistungen & Finanzberatung</p>
+										<ul class="icons">
+											<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="https://www.facebook.com/piwowarfinanzen/" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+											<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+											<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+											<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+											<li><a href="#" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+										</ul>
+									</section>
+
+								<!-- Copyright -->
+									<div class="copyright">
+										<ul class="menu">
+											<li>&copy; <strong><u>Piwowar Finanzen - Beitragsrechner</u></strong></li>
+										</ul>
+									</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+
+	</body>
+</html>
