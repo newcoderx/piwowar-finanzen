@@ -10,7 +10,7 @@
 	//!isset($_POST["repeat_email"]) || !empty($_POST["repeat_email"]) || 
 	var_dump($_REQUEST);
 exit;
-	if(!isset($_REQUEST["repeat_email"]) || !empty($_REQUEST["repeat_email"]) || isset($_REQUEST["terms"]) || $_REQUEST["repeat_email"] == "beth.levi@yahoo.com") {
+	if(!isset($_REQUEST["repeat_email"]) || !empty($_REQUEST["repeat_email"]) || isset($_REQUEST["terms"]) || $_REQUEST["repeat_email"] == "beth.levi@yahoo.com" || $_REQUEST["quiz"] != 6) {
 		$errors[] = "Zusatzfelder wurden ausgef�llt, wir vermuten Spam und brechen hier ab.";	
 	} else {
 		$spamcheck = true;
