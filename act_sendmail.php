@@ -17,7 +17,7 @@
 	}
 
   if($spamcheck == true) {
-  $to = "wonger1@web.de";
+  $to = "info@piwowar-finanzen.de";
   $subject = "Kontaktanfrage aus piwowar-finanzen Webseite";
   $message = "Name und Vorname:  " . utf8_decode($_REQUEST['NameInput']) . "\r\n\r\n";
   $message .= "Straße und Hausnummer:  " . utf8_decode($_REQUEST['AdressInput']) . "\r\n\r\n";
@@ -27,14 +27,14 @@
   $message .= "Nachricht:  " . utf8_decode($_REQUEST['Message']);
   $from = utf8_decode($_REQUEST['EmailInput']);
   $headers = "From:" . $from;
-  mail($to,$subject,$message,$headers, "-f wonger1@web.de");
+  mail($to,$subject,$message,$headers, "-f info@piwowar-finanzen.de");
   //mail an Absender
   $to = $_REQUEST['EmailInput'];
   $subject = "Piwowar Finanzen";
   $message = utf8_decode("Sehr geehrte Damen und Herren,vielen Dank für Ihre Nachricht. Sie bekommen von uns schnellstmöglich eine Antwort.");
-  $from = "wonger1@web.de";
+  $from = "info@piwowar-finanzen.de";
   $headers = "From:" . $from;
-  mail($to,$subject,$message,$headers, "-f wonger1@web.de");
+  mail($to,$subject,$message,$headers, "-f info@piwowar-finanzen.de");
   
   //Email response
   //echo "Thank you for contacting us!";
